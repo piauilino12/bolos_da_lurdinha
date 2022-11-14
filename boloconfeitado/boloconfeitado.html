@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="faviconn.ico" type="image/x-icon">
+    <style>
+        body{
+            background-image: url(planodefundo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }header{
+            color: rgb(231, 142, 231);
+            margin-left: 270px;
+        }#bolos{
+            display: flex;
+            padding: 10px;
+            
+        }
+        figure, figure img{    
+            width: 200px;
+            height: 200px;
+            border-radius: 40px;
+            box-shadow: 10px 10px 10px;
+            text-align: center;
+            color: rgb(10, 5, 5);
+        }p{
+            color: rgb(235, 57, 226);
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 0px;
+        }
+        #res{
+            margin-top: 100px;
+            margin-left: 100px;
+            color: white;
+            font-size: 35px;
+        }
+        #sabor{
+            background-color: rgb(59, 7, 61);
+            
+        }#cabeçalho{
+            background-color: rgb(19, 12, 3);
+            border-radius: 100px;
+            margin-top: 10px;
+            width: 100px;
+            text-align: center;
+            padding: 5px;
+            margin: auto;
+            color: white;
+            font-weight: bolder;
+        }
+        #opcoes{
+            color: rgb(235, 137, 222);
+            line-height: 30px;
+            text-align: left;
+            margin-left: 55px;
+        }
+        #pag{
+            margin-top: 250px;
+            margin: 150px;
+            margin-left: 400px;
+            background-color: rgb(182, 178, 178);
+            width: 120px;
+            text-align: center;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body><header><h1>BOLO CONFEITADO</h1></header>
+    <section id="bolos"><figure id="sabor">
+            <div id="cabeçalho">
+                SABOR 'RECHEIO' 
+            </div>
+            <div id="opcoes">
+                <input type="radio" name="sabor" id="1">
+                <label for="Chocolate">Chocolate</label><br>
+
+                <input type="radio" name="sabor" id="2">
+                <label for="">Castanha</label><br>
+                
+                <input type="radio" name="sabor" id="3">
+                <label for="coco">Prestígio</label><br>
+
+                <input type="radio" name="sabor" id="4">
+                <label for="ninho">Leite Ninho</label><br>
+
+                <input type="radio" name="sabor" id="5">
+                <label for="coco">Coco</label>
+            </div>
+        </figure>
+        <figure id="img">
+            <img src="1.jpg"  onmouseover="this.src='1cinza.jpg'" onmouseout="this.src='1.jpg'" onclick="p()">
+             <p>P</p>
+        </figure>
+        <figure id="img">
+            <img src="2.jpg" onmouseover="this.src='2cinza.jpg'" onmouseout="this.src='2.jpg'" onclick="m()">
+            <p>M</p>
+        </figure>
+        <figure id="img">
+            <img src="3.jpg" onmouseover="this.src='3cinza.jpg'" onmouseout="this.src='3.jpg'" onclick="g()">
+            <p>G</p>
+        </figure>
+        
+    </section>
+    <div id="res">
+        ESCOLHA O RECHEIO E O TAMANHO ACIMA!
+    </div>
+    <div id="pag">
+        <a href="/lourdinha.html">Página anterior</a>
+    </div>
+    <script src="boloconfeitado.js"></script>
+</body>
+</html>

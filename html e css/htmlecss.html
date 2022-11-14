@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(230, 243, 245);
+        }
+        h1{ background-color: rgb(131, 131, 131);
+            text-align: center;
+            color: white;
+            padding: 50px;
+        }
+        .sec{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        figure, figure img{
+            width: 256px;
+            height: 256px;
+        }
+        #fig2{
+            background-image: url(bolo2.png);
+            background-repeat: no-repeat;
+            background-size: 240px;
+        }
+        #fig2:hover{
+            background-image: url(bolocinza.png);
+        }
+    </style>
+   
+</head>
+<body>
+    <h1>Trocar imagem ao passar o Mouse!</h1>
+    <div class="sec">
+        <figure id="fig1">
+            <img src="/bolo2.png" onmouseover="this. src='/bolocinza.png'" onmouseout="this.src='bolo2.png'">
+            <figcaption>Usando mouseover/mouseout</figcaption>
+        </figure>
+            
+        <figure id="fig2">
+            <img>
+            <figcaption>Usando CSS</figcaption>
+        </figure>
+    </div>
+</body>
+</html>

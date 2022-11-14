@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUPCAKE</title>
+    <link rel="shortcut icon" href="faviconn.ico" type="image/x-icon">
+    <style>
+        body{
+            background-image: url(/cupcake/planodefundo.jpg);
+            background-size: 640px;
+        }header{
+            text-align: center;
+            background-color: pink;
+            width: 400px;
+            padding: 10px;
+            border-radius: 50px;
+            font-size: 30px;
+            font-weight: bolder;
+            margin: auto;
+            box-shadow: 5px 5px 10px;
+            color: rgb(57, 3, 109);
+        }
+        #img{
+            display: flex;
+            justify-content: center;
+        }
+        #imagem{
+            box-shadow: 5px 5px 5px;
+            color: rgb(199, 187, 189);
+            border-radius: 100px;
+        }
+        #quantidade{
+            background-color: rgb(126, 128, 128);
+            width: 250px;
+            margin-left: 670px;
+            border-radius: 100px;
+            height: 50px;    
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        p, input{
+            border-radius: 300px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #res{background-color: black;
+            font-weight: bold;
+            text-align: center;
+            width: 300px;
+            margin: auto;
+            color: rgb(235, 41, 225);
+            font-size: 25px;
+            border-radius: 10px;
+        }
+        #anterior{
+            background-color: rgb(241, 241, 241);
+            width: 150px;
+            border-radius: 50px;
+            text-align: center;
+            margin: auto;
+            margin-top: 230px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>CUPCAKE</header>
+    <div id="quantidade">
+        <p>QUANTIDADE: <input type="number" name="quantidade" id="quant"></p>
+    </div>
+    <section id="img">
+        <figure id="imagem">
+            <abbr title="CHOCOLATE"><img src="/cupcake/cupchocolate.png" onmouseover="this.src='/cupcake/cupchocolaterosa.png'" onmouseout="this.src='/cupcake/cupchocolate.png'" onclick="chocolate()"></abbr>
+        </figure>
+        <figure id="imagem">
+            <abbr title="BAUNILHA"><img src="/cupcake/baunilha.webp" onmouseover="this.src='/cupcake/baunilharosa.webp'" onmouseout="this.src='/cupcake/baunilha.webp'" onclick="baunilha()"></abbr>
+        </figure>
+        <figure id="imagem">
+            <abbr title="MORANGO"><img src="/cupcake/morango1.png" onmouseover="this.src='/cupcake/morangorosa.png'" onmouseout="this.src='/cupcake/morango1.png'" onclick="morango()"></abbr>
+        </figure>
+    </section>
+    <div id="res">
+
+    </div>
+    <div id="anterior">
+        <a href="/lourdinha.html">
+            <p>Pagina Anterior</p>
+        </a>
+    </div>
+    <script src="cupcake.js"></script>
+</body>
+</html>

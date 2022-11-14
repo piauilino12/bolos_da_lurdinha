@@ -1,0 +1,31 @@
+header{
+    text-align: center;
+    font-weight: bold;
+}
+body{
+    background-image: url(img/planodefundo.png);
+    background-repeat: no-repeat;   
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(245, 174, 224);
+}
+.informaçoes{
+    text-align: center;
+    margin: 5px;
+    color: rgb(79, 23, 131);
+    font-weight: bold;
+}
+#sec{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+
+}
+figure, figure img{
+    width: 256px;
+    height: 256px;
+}
